@@ -81,7 +81,7 @@ static void queue_destroy(Queue q)
 	free(q);
 }
 
-struct queue_operation ops = {
+struct queue_operation spsc_queue_ops = {
 	.create = queue_create,
 
 	.enqueue = queue_enqueue,
@@ -91,5 +91,3 @@ struct queue_operation ops = {
 
 	.destroy = queue_destroy
 };
-
-QueueOperation spsc_queue_ops = &ops;

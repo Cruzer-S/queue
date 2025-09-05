@@ -3,6 +3,6 @@
 
 #include "queue.h"
 
-extern QueueOperation spsc_queue_ops;
+extern struct queue_operation spsc_queue_ops;
 
 #endif
